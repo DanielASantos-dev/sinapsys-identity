@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/SinapsysIdentity?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+  Jackson:
+    default-property-inclusion: non_null
+    mvc:
+      pathmatch:
+        matching-strategy: ant_path_matcher
+
+jwt:
+  secret: 42bd8235-dced-4bd6-bf60-ad1fa6e6ee63
+  expiration: 999999
